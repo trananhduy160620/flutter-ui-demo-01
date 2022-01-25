@@ -1,12 +1,10 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:flutter_stateful_widget/screens/landing_screen.dart';
 import 'package:flutter_stateful_widget/utils/contants.dart';
 import 'dart:ui';
 void main() {
-  
  runApp(MyApp());
 }
 
@@ -18,11 +16,9 @@ class MyApp extends StatelessWidget {
     
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Design UI 1',
+      title: 'Flutter Demo UI 1',
       theme: ThemeData(
-        
         primaryColor: COLOR_WHITE, 
-        accentColor: COLOR_DARK_BLUE, 
         textTheme: screenWidth < 500 ? TEXT_THEME_SMALL : TEXT_THEME_DEFAULT, 
         fontFamily: "Montserrat"),
       home: LandingScreen(),
